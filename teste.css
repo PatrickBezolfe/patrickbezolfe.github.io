@@ -1,0 +1,105 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+    font-family: sans-serif;
+}
+body{
+    background-color: darkgrey;
+}
+.janela{
+    background: linear-gradient(to top, rgb(150, 199, 238), #fff);
+    position: absolute;
+    z-index: 0;
+    top: 100px;
+    left: 500px;
+    width: 400px;
+    height: 200px;
+    align-items: center;
+    
+    border: 4px solid rgb(90, 90, 90);
+    border-radius: 10px;
+    box-shadow: 6px 8px 10px black;
+    display: flex;
+    flex-direction: column;
+    
+
+}   
+    .txt{
+        font-weight: bold;
+        
+        background: linear-gradient(to bottom, rgb(80, 80, 80), #fff);
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        width: 400px;
+        padding: 15px 0px;
+        
+        border-bottom: 2px solid rgb(90, 90, 90);
+
+    }    
+    .botoes{
+        
+        position: absolute;
+        top: 100px;
+        width: 300px;
+        
+        display: flex;
+        justify-content: space-between;
+        
+
+    }
+        #nao{
+            background-color: #f84848;
+            width: 75px;
+            height: 40px;
+            white-space: nowrap;
+            padding: 10px;
+            box-shadow: 3px 6px 9px;
+            border-radius: 20px;
+        }
+        
+        #sim{
+            background-color: #fff022b4;
+            width: 75px;
+            height: 40px;
+            white-space: nowrap;
+            padding: 10px;
+            box-shadow: 3px 6px 9px;
+            border-radius: 20px;
+            
+
+            animation-name: mov;
+            animation-duration: 1s;
+            animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+       
+        }
+        @keyframes mov {
+            from{
+                transform: scale(1);
+                
+            }
+            to{
+                transform: scale(1.5);
+                
+            }
+        }
+            
+        
+.novaposicao1{
+    transform: translate(25px, 55px)
+}
+.novaposicao2{
+    transform: translate(-50px, -40px)
+}
+.novaposicao3{
+    transform: translate(-60px, 50px)
+}
+.novaposicao4{
+    transform: translate(45px, -30px)
+}
+.novaposicao5{
+    transform: translate(-70px, 30px)
+}
