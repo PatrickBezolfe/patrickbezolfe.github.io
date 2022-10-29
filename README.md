@@ -1,1 +1,0 @@
-# patrickbezolfe.github.io
